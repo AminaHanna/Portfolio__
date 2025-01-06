@@ -610,6 +610,8 @@ strong {
 
 .clients-item-height {
 	height: 120px;
+  align-items: center;
+  display: flex;
 }
 
 .clients-image {
@@ -1186,3 +1188,31 @@ strong {
   }
 }
 
+
+/* ----------------- */
+.slider {
+  overflow: hidden;
+  /* width: 100%;
+  max-width: 1000px; */
+}
+
+.slider-track {
+  display: flex;
+  width: calc(250px * 10); /* Adjust based on number of logos */
+  animation: scroll 15s linear infinite;
+}
+
+.slider-track img {
+  width: 200px;
+  height: auto;
+  /* margin: 0 25px; */
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 5)); /* Half of the total number of logos */
+  }
+}
