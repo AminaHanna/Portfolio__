@@ -1193,13 +1193,16 @@ strong {
 /* ----------------- */
 .slider {
   overflow: hidden;
-  /* width: 100%;
-  max-width: 1000px; */
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .slider-track {
   display: flex;
-  width: calc(250px * 10); /* Adjust based on number of logos */
+  /* width: calc(250px * 10); */
+  width: calc(150px * 10);
+   /* Adjust based on number of logos */
   animation: scroll 15s linear infinite;
 }
 
@@ -1214,6 +1217,8 @@ strong {
       transform: translateX(0);
   }
   100% {
-      transform: translateX(calc(-250px * 5)); /* Half of the total number of logos */
+      /* transform: translateX(calc(-250px * 5)); */
+       /* Half of the total number of logos */
+       transform: translateX(calc(-150px * 5))
   }
 }
